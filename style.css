@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap");
+
+/* colors */
+
+:root {
+  --prim-color: hsl(240, 38%, 20%);
+  --sec-color: hsl(240, 18%, 77%);
+
+  --white: hsl(0, 0%, 100%);
+  --gray: hsl(0, 0%, 92%);
+}
+
+/* default */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 32px;
+  color: var(--prim-color);
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: url(./images/pattern-curve.svg) no-repeat bottom left;
+}
+
+main {
+  min-width: 1200px;
+  min-height: 675px;
+  display: flex;
+  overflow: hidden;
+  padding: 1em;
+}
+
+.testimonial {
+  display: flex;
+  align-items: center;
+  background: url(./images/pattern-quotes.svg) no-repeat;
+  background-position-x: 3em;
+  background-position-y: 4em;
+  transition: all 250ms ease-in-out;
+}
+
+.testimonial__user {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.testimonial__user blockquote {
+  max-width: 645px;
+  z-index: 100;
+  font-weight: 300;
+}
+
+.testimonial__user strong {
+  font-weight: 700;
+  font-size: 0.75rem;
+  margin-top: 1.75em;
+}
+
+.testimonial__user span {
+  font-weight: 500;
+  color: var(--sec-color);
+}
+
+.testimonial__side {
+  position: relative;
+  width: 700px;
+  height: 680px;
+}
+
+.testimonial__thumbnail {
+  /* width: 722px;
+  height: 680px; */
+  width: 697px;
+  height: 657px;
+  position: absolute;
+  left: -4em;
+  background: url(./images/pattern-bg.svg) no-repeat center center;
+  background-size: cover;
+}
+
+.user-img {
+  max-width: 535px;
+  height: auto;
+  margin: 2em;
+  position: relative;
+}
+
+.btn-group {
+  bottom: -0.5em;
+  left: 1.5em;
+  position: absolute;
+  background-color: var(--white);
+  display: flex;
+  box-shadow: 0 0 3em 0.5em var(--sec-color);
+  border-radius: 2em;
+  overflow: hidden;
+}
+
+button {
+  border: none;
+  outline: none;
+  background-color: var(--white);
+  margin: 0;
+  cursor: pointer;
+  padding: 1em;
+  transition: background-color 250ms ease-in-out;
+}
+
+.prev {
+  padding-right: 1.5em;
+}
+
+.next {
+  padding-left: 1.5em;
+}
+
+.btn-group button:hover {
+  background-color: var(--gray);
+}
+
+.btn-group button img {
+  width: 1em;
+  height: 20px;
+}
+
+.hide-right {
+  display: none;
+  transform: translateX(200%);
+}
+
+.hide-left {
+  display: none;
+  transform: translateX(-200%);
+}
+
+.show {
+  transform: translateX(0);
+}
