@@ -161,11 +161,6 @@ button {
   transform: translateX(calc(200%));
 }
 
-.hide-right {
-  position: absolute;
-  transform: translateX(calc(200%));
-}
-
 .hide-left {
   position: absolute;
   transform: translateX(calc(-200%));
