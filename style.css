@@ -52,7 +52,7 @@ main {
   background: url(./images/pattern-quotes.svg) no-repeat;
   background-position-x: 3em;
   background-position-y: 4.5em;
-  transition: transform 1s ease-in-out;
+  transition: all 500ms ease-in-out;
 }
 
 .testimonial__user {
@@ -75,12 +75,12 @@ main {
 
 .testimonial__user .testimonial__user-position strong {
   font-weight: 700;
-  font-size: 0.75rem;
+  font-size: 1.25rem;
 }
 
 .testimonial__user .testimonial__user-position p {
   font-weight: 500;
-  font-size: 0.75rem;
+  font-size: 1.25rem;
   color: var(--sec-color);
   margin-left: 0.5em;
 }
@@ -158,16 +158,19 @@ button {
 
 .hide-right {
   position: absolute;
+  left: 100%;
   transform: translateX(calc(200%));
 }
 
 .hide-left {
   position: absolute;
+  left: -100%;
   transform: translateX(calc(-200%));
 }
 
 .show {
   position: absolute;
+  left: 1em;
   transform: translateX(0%);
 }
 
@@ -218,6 +221,13 @@ button {
   .testimonial__side {
     width: 400px;
     height: 360px;
+  }
+  .testimonial__user .testimonial__user-position strong {
+    font-size: 1rem;
+  }
+
+  .testimonial__user .testimonial__user-position p {
+    font-size: 1rem;
   }
   .testimonial__thumbnail {
     width: 397px;
