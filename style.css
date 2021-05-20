@@ -27,6 +27,7 @@ body {
   color: var(--prim-color);
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   background: var(--white) url(./images/pattern-curve.svg) no-repeat bottom left;
@@ -170,15 +171,13 @@ button {
 
 .show {
   position: absolute;
-  left: 1em;
+  left: 5em;
   transform: translateX(0%);
 }
 
 /* footer */
 
 .attribution {
-  position: absolute;
-  bottom: -5rem;
   font-size: 0.75rem;
   line-height: 20px;
   text-align: center;
@@ -299,6 +298,9 @@ button {
   .testimonial__user-position {
     flex-direction: column;
   }
+  .show {
+    left: 0;
+  }
   .btn-group {
     bottom: 50%;
     left: 38%;
@@ -315,7 +317,7 @@ button {
   }
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 370px) {
   body {
     align-items: flex-start;
     justify-content: flex-start;
@@ -323,6 +325,7 @@ button {
   }
   main {
     height: 430px;
+    width: 300px;
   }
   .testimonial {
     background-position-x: 4em;
@@ -342,9 +345,12 @@ button {
     width: 200px;
     height: 200px;
   }
+  .show {
+    left: 1em;
+  }
   .btn-group {
-    bottom: 54%;
-    left: 26%;
+    left: 33%;
+    bottom: 53%;
   }
   .prev {
     background-size: 0.6em;
@@ -355,6 +361,7 @@ button {
     padding: 1em;
   }
   .attribution {
+    width: 100%;
     margin-bottom: 0;
   }
 }
