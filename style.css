@@ -63,7 +63,7 @@ main {
 }
 
 .testimonial__user blockquote {
-  max-width: 645px;
+  max-width: 700px;
   min-width: 400px;
   z-index: 100;
   font-weight: 300;
