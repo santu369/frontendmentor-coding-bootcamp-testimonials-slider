@@ -116,7 +116,7 @@ main {
 
 .btn-group {
   bottom: 8%;
-  left: 48%;
+  left: 54%;
   position: absolute;
   background-color: var(--white);
   display: flex;
@@ -239,7 +239,7 @@ button {
   }
   .btn-group {
     bottom: 5%;
-    left: 51%;
+    left: 55%;
   }
   button {
     padding: 1.5em;
